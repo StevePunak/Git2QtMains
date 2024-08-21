@@ -6,13 +6,43 @@ In large part, it is a port of the [libgit2sharp](https://github.com/libgit2/lib
 
 ## Building
 
+**NOTE:** This project requires Qt 6.
+
+### Just The Library
+
 Get the code: 
 
-`git clone https://github.com/StevePunak/libgit2qt.git` 
+    `git clone https://github.com/StevePunak/libgit2qt.git` 
 
-Start Qt Creator.
+1. Start Qt Creator
+2. Open the CMakeLists.txt in the root folder. 
+3. Select a kit to build.
+4. Build the library
 
-Open the CMakeLists.txt in the root folder and select a kit to build. This project requires Qt 6.
+### The Library and a Program With Examples
+There is a submodules project which includes the library and a program with some examples. 
+This is probably the best way to get started for most people as there is currently no documentation (working on it).
+
+1. Get the code:
+
+    `git clone https://github.com/StevePunak/Git2QtMains.git` 
+    
+2. Get the test repository:
+
+    `git clone https://github.com/StevePunak/GitTesting.git` 
+
+3. Start Qt Creator
+4. Open the CMakeLists.txt in the root folder. 
+5. Select a kit to build.
+6. Build the project
+7. Run the example program with the following parameters    
+
+    `auto --local-path /path/to/test-repository/GitTesting`
+    
+![To run in the debugger](/assets/ss-run-config.png)
+    
+
+
 
 
 ## Usage
