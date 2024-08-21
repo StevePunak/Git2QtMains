@@ -10,5 +10,5 @@ set(MAIN_PROJ git2qtmains)
 project(${MAIN_PROJ} VERSION 1.0.0 LANGUAGES CXX)
 
 # Add all submodules for this specific project
-add_subdirectory(Git2Qt)
+add_subdirectory(libgit2qt)
 add_subdirectory(Git2QtTests)

@@ -1,3 +1,6 @@
 [submodule "Git2QtTests"]
 	path = Git2QtTests
 	url = git@github.com:StevePunak/Git2QtTests.git
+[submodule "libgit2qt"]
+	path = libgit2qt
+	url = git@github.com:StevePunak/libgit2qt.git
